@@ -9,15 +9,15 @@ import com.w2a.base.TestBase;
 public class LoginTest extends TestBase {
 	
 	@Test
-	public void invalidLogin () throws InterruptedException {
+	public void validLogin () throws InterruptedException {
 		
 		click("HomeloginBtn_XPATH");
 		Thread.sleep(2000);
-		driver.findElement(By.id(OR.getProperty("email_ID"))).sendKeys(OR.getProperty("invalidEmail_TEXT"));
-		driver.findElement(By.id(OR.getProperty("password_ID"))).sendKeys(OR.getProperty("password_TEXT"));		
-		click("loginBtn_XPATH");
+		driver.findElement(By.xpath(OR.getProperty("email_XPATH"))).sendKeys(OR.getProperty("email_TEXT"));
+		driver.findElement(By.name(OR.getProperty("password_NAME"))).sendKeys(OR.getProperty("password_TEXT"));		
+		click("signupBtn_ID");
 		Thread.sleep(3000);
-		Assert.assertTrue(isElementPresent(By.className(OR.getProperty("alert_CLASSNAME"))), "Your Credential is not Correct");
+		Assert.assertTrue(isElementPresent(By.className(OR.getProperty("alert_XPATH"))), "CLOUD HEALTH");
 		log.debug("Log in successfully executed");
 		
 	}
