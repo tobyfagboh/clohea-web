@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.w2a.testcase.ResetPasswordTest">
+      <class name="com.w2a.testcase.ForgotPasswordTest">
         <methods>
           <include name="setUp"/>
-          <include name="ResetPassword"/>
           <include name="tearDown"/>
+          <include name="InvalidLogin"/>
         </methods>
-      </class> <!-- com.w2a.testcase.ResetPasswordTest -->
+      </class> <!-- com.w2a.testcase.ForgotPasswordTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
