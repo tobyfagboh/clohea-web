@@ -6,10 +6,10 @@ import org.testng.annotations.Test;
 
 import com.w2a.base.TestBase;
 
-public class LoginTest extends TestBase {
+public class LoginSignupTest extends TestBase {
 	
 	@Test
-	public void invalidLogin () throws InterruptedException {
+	public void login_signout () throws InterruptedException {
 		
 		// Lauching homepage
 				click("HomeloginBtn_XPATH");
