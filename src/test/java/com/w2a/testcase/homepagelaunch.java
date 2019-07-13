@@ -12,6 +12,7 @@ public class homepagelaunch extends TestBase {
 	public void homepagelaunch () throws InterruptedException {
 	
 	// Validation of homepage log in
+		
 		click("testsiteurl");
 		Thread.sleep(2000);
 }}
